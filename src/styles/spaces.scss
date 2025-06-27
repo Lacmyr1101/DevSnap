@@ -26,6 +26,8 @@
     padding: 3px;
     background: #333;
     transition: 0.2s;
+    color: white;
+    border: 2px solid white;
     &:hover {
       background: #555;
       cursor: pointer;
@@ -45,6 +47,8 @@
     border-radius: 50%;
     background: #333;
     transition: 0.2s;
+    color: white;
+    border: 2px solid white;
     ion-icon {
       margin-top: -1px;
       margin-left: -0px;
@@ -79,7 +83,7 @@
     }
   }
 
-   .show-info {
+  .show-info {
     position: fixed;
     width: 350px;
     top: 30%;
@@ -98,8 +102,8 @@
       color: black;
       font-weight: bolder;
       padding: 5px;
-      font-size: 20px
-    };
+      font-size: 20px;
+    }
 
     button {
       padding: 5px 10px;
@@ -132,6 +136,9 @@
         padding: 3px;
         overflow: hidden;
         transition: 0.2s;
+        color: white;
+        border: 1px solid white;
+        background-color: #555;
         option {
           font-size: 15px;
         }
@@ -155,12 +162,16 @@
     .buttons {
       display: flex;
       gap: 5px;
+
       select {
         font-size: 18px;
         border-radius: 10px;
         padding: 3px;
         overflow: hidden;
         transition: 0.2s;
+        color: white;
+        border: 1px solid white;
+        background-color: #555;
         option {
           font-size: 15px;
         }
@@ -177,6 +188,8 @@
         padding: 3px;
         background: #333;
         transition: 0.2s;
+        color: white;
+        border: 2px solid white;
         &:hover {
           background: #555;
           cursor: pointer;
