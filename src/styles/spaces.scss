@@ -1,0 +1,463 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.work-space {
+  position: relative;
+  width: 60%;
+  min-height: calc(100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 20px 0;
+  box-shadow: 0 0 8px white;
+
+  .btn-sections {
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 3px;
+    background: #333;
+    transition: 0.2s;
+    &:hover {
+      background: #555;
+      cursor: pointer;
+    }
+  }
+
+  .btn-info {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 18px;
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #333;
+    transition: 0.2s;
+    ion-icon {
+      margin-top: -1px;
+      margin-left: -0px;
+    }
+    &:hover {
+      background: #555;
+      cursor: pointer;
+    }
+  }
+
+  .show-sections {
+    position: fixed;
+    width: 250px;
+    top: 50%;
+    h2 {
+      color: black;
+    }
+
+    form {
+      width: 100%;
+
+      label {
+        display: flex;
+        flex-direction: row;
+        color: #000;
+        width: 100%;
+      }
+    }
+    button {
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  }
+
+   .show-info {
+    position: fixed;
+    width: 350px;
+    top: 30%;
+    h2 {
+      color: black;
+    }
+
+    p {
+      color: #000;
+      font-family: sans-serif;
+      text-align: justify;
+    }
+
+    span {
+      display: block;
+      color: black;
+      font-weight: bolder;
+      padding: 5px;
+      font-size: 20px
+    };
+
+    button {
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  }
+
+  .head-buttons {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    input[type="checkbox"] {
+      border-radius: 50%;
+      background-color: #000;
+    }
+
+    label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      font-size: 20px;
+
+      select {
+        font-size: 18px;
+        border-radius: 10px;
+        padding: 3px;
+        overflow: hidden;
+        transition: 0.2s;
+        option {
+          font-size: 15px;
+        }
+
+        &:hover {
+          background: #333;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .bottom-buttons {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+
+    .buttons {
+      display: flex;
+      gap: 5px;
+      select {
+        font-size: 18px;
+        border-radius: 10px;
+        padding: 3px;
+        overflow: hidden;
+        transition: 0.2s;
+        option {
+          font-size: 15px;
+        }
+
+        &:hover {
+          background: #333;
+          cursor: pointer;
+        }
+      }
+
+      button {
+        font-size: 18px;
+        border-radius: 10px;
+        padding: 3px;
+        background: #333;
+        transition: 0.2s;
+        &:hover {
+          background: #555;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.landing-space {
+  padding-left: 2rem;
+  width: 40%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .presentation {
+    height: 88%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 45%;
+      justify-content: space-between;
+
+      .icon {
+        // border: 1px solid red;
+        width: 100%;
+        height: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .subtitle-bg {
+        background-color: #000;
+        height: 50px;
+        width: 190px;
+        padding: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .subtitle {
+          display: block;
+          font-family: monospace;
+          white-space: nowrap;
+          width: 10ch;
+          font-size: 30px;
+          font-weight: bolder;
+          animation: typing 5s steps(10) infinite;
+          overflow: hidden;
+        }
+
+        .write {
+          font-family: monospace;
+          font-size: 30px;
+          display: block;
+          animation: blink 0.5s infinite step-end alternate;
+          font-weight: bolder;
+        }
+      }
+
+      .btn-start {
+        display: none;
+        font-family: sans-serif;
+        color: white;
+        width: 260px;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 10px;
+        padding: 3px;
+        background: #333;
+        margin-top: 20px;
+        transition: 0.2s;
+        &:hover {
+          background: #555;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .info {
+      width: 100%;
+      border: 5px solid white;
+      border-radius: 20px;
+      padding: 15px;
+      height: 45%;
+      overflow-y: scroll;
+
+      p {
+        font-family: sans-serif;
+        text-align: justify;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .social {
+    width: 80%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.5s;
+
+      ion-icon {
+        width: 70%;
+        height: 70%;
+        color: white;
+        transition: 0.5s;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+        ion-icon {
+          color: #aaa;
+        }
+      }
+    }
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    color: transparent;
+  }
+}
+
+@media (orientation: portrait) {
+  .work-space {
+    width: 100%;
+    overflow-y: hidden;
+  }
+
+  .landing-space {
+    width: 100%;
+    padding-left: 0;
+
+    .presentation {
+      .title {
+        .btn-start {
+          display: block;
+        }
+      }
+
+      .info {
+        border: none;
+        border-radius: 0;
+        overflow-y: hidden;
+      }
+    }
+  }
+}
+
+@media (orientation: landscape) {
+  #root {
+    max-height: 100vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .work-space {
+    .show-info {
+      width: 250px;
+    }
+
+    .head-buttons {
+      width: 100%;
+
+      label:nth-child(2) {
+        flex-direction: column;
+      }
+
+      label:first-child {
+        span {
+          span:nth-child(2) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .bottom-buttons {
+      flex-direction: column;
+    }
+  }
+
+  .landing-space {
+    .presentation {
+      .title {
+        width: 60%;
+        height: 60%;
+      }
+
+      .info {
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .work-space {
+    .head-buttons {
+      width: 80%;
+    }
+  }
+
+  .landing-space {
+    .presentation {
+      .title {
+        width: 80%;
+        height: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .work-space {
+    .head-buttons {
+      padding: 15px;
+      padding-top: 0;
+      width: 100%;
+      display: flex;
+      gap: 10px;
+
+      input[type="checkbox"] {
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+
+  .landing-space {
+    .presentation {
+      .title {
+        width: 90%;
+        height: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .landing-space {
+    .presentation {
+      .title {
+        width: 85%;
+      }
+      .info {
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

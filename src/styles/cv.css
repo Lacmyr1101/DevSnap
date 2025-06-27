@@ -1,0 +1,320 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+section {
+  position: relative;
+  width: 100%;
+}
+section button {
+  position: absolute;
+  cursor: pointer;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  background-color: #aaa;
+  transition: all 0.3s ease;
+  top: 100%;
+  right: 0px;
+}
+section button span,
+section button ion-icon {
+  font-family: sans-serif;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+  transition: width 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 1000;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.cv-panel {
+  position: relative;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+.cv-panel::before {
+  content: "";
+  width: 100%;
+  height: 25px;
+  background-color: white;
+  position: absolute;
+  top: 100%;
+}
+
+.cv-contact {
+  position: relative;
+  width: 100%;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cv-contact hr {
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
+}
+.cv-contact-name {
+  font-size: 30px;
+}
+.cv-contact p {
+  font-size: 18px;
+}
+.cv-contact p span a {
+  color: #222;
+}
+.cv-contact p span a:hover {
+  color: #555;
+}
+.cv-contact-edit {
+  top: 0;
+}
+
+.cv-projects {
+  font-size: 18px;
+  min-height: 91px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cv-projects .modal h2 {
+  font-size: 25px;
+}
+.cv-projects h2 {
+  text-transform: uppercase;
+  font-weight: 1000;
+  font-size: 18px;
+}
+.cv-projects hr {
+  margin-bottom: 15px;
+  width: 100%;
+}
+.cv-projects-list {
+  width: 100%;
+}
+.cv-projects-list-project {
+  width: 100%;
+  padding: 0 15px;
+}
+.cv-projects-list-project-header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.cv-projects-list-project-header-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.cv-projects-list-project-header-buttons button {
+  position: relative;
+  top: -5px;
+  margin-bottom: -5px;
+}
+.cv-projects-list-project-data {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+.cv-projects-list-project-data span {
+  margin-bottom: 5px;
+}
+.cv-projects-list-project-data span a {
+  color: #222;
+}
+.cv-projects-list-project-data span a:hover {
+  color: #555;
+}
+.cv-projects-list-project-data-technologies {
+  font-weight: bolder;
+}
+
+.cv-experience {
+  font-size: 12px;
+  min-height: 98px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cv-experience .modal h2 {
+  font-size: 25px;
+}
+.cv-experience h2 {
+  text-transform: uppercase;
+  font-weight: 1000;
+  font-size: 18px;
+}
+.cv-experience hr {
+  margin-bottom: 15px;
+  width: 100%;
+}
+.cv-experience-list {
+  width: 100%;
+}
+.cv-experience-list-panel {
+  width: 100%;
+  padding: 0 15px;
+  min-height: 60.33px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cv-experience-list-panel-head {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.cv-experience-list-panel-head-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.cv-experience-list-panel-head-buttons button {
+  position: relative;
+  top: -5px;
+  margin-bottom: -5px;
+}
+.cv-experience-list-panel-list {
+  width: 100%;
+}
+.cv-experience-list-panel-list-data {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.cv-experience-list-panel-list-data-head {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.cv-experience-list-panel-list-data-head-position {
+  max-width: 70%;
+  text-align: justify;
+  font-weight: 900;
+  font-size: 18px;
+}
+.cv-experience-list-panel-list-data-head-time {
+  min-width: 180px;
+  text-align: right;
+  font-size: 18px;
+}
+.cv-experience-list-panel-list-data-description {
+  width: 100%;
+  text-align: left;
+  margin-top: 3px;
+  text-align: justify;
+  font-size: 18px;
+}
+.cv-experience-list-panel-list-data-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+.cv-experience-list-panel-list-data-buttons button {
+  position: relative;
+  padding: 5px 8px;
+  top: 0px;
+  left: 0;
+  margin-bottom: -10px;
+  transform: scale(1);
+}
+.cv-experience-list-panel-list-data-buttons button:hover {
+  transform: scale(1);
+}
+
+.cv-education {
+  font-size: 18px;
+  min-height: 91px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cv-education .modal h2 {
+  font-size: 25px;
+}
+.cv-education h2 {
+  text-transform: uppercase;
+  font-weight: 1000;
+  font-size: 18px;
+}
+.cv-education hr {
+  margin-bottom: 15px;
+  width: 100%;
+}
+.cv-education-list {
+  width: 100%;
+}
+.cv-education-list-study {
+  width: 100%;
+  padding: 0 15px;
+}
+.cv-education-list-study-header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.cv-education-list-study-header-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.cv-education-list-study-header-buttons button {
+  position: relative;
+  top: -5px;
+  margin-bottom: -5px;
+}
+.cv-education-list-study-data {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=cv.css.map */

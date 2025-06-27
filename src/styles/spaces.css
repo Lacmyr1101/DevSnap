@@ -1,0 +1,377 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.work-space {
+  position: relative;
+  width: 60%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 20px 0;
+  box-shadow: 0 0 8px white;
+}
+.work-space .btn-sections {
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 3px;
+  background: #333;
+  transition: 0.2s;
+}
+.work-space .btn-sections:hover {
+  background: #555;
+  cursor: pointer;
+}
+.work-space .btn-info {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 18px;
+  width: 33px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #333;
+  transition: 0.2s;
+}
+.work-space .btn-info ion-icon {
+  margin-top: -1px;
+  margin-left: 0px;
+}
+.work-space .btn-info:hover {
+  background: #555;
+  cursor: pointer;
+}
+.work-space .show-sections {
+  position: fixed;
+  width: 250px;
+  top: 50%;
+}
+.work-space .show-sections h2 {
+  color: black;
+}
+.work-space .show-sections form {
+  width: 100%;
+}
+.work-space .show-sections form label {
+  display: flex;
+  flex-direction: row;
+  color: #000;
+  width: 100%;
+}
+.work-space .show-sections button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.work-space .show-info {
+  position: fixed;
+  width: 350px;
+  top: 30%;
+}
+.work-space .show-info h2 {
+  color: black;
+}
+.work-space .show-info p {
+  color: #000;
+  font-family: sans-serif;
+  text-align: justify;
+}
+.work-space .show-info span {
+  display: block;
+  color: black;
+  font-weight: bolder;
+  padding: 5px;
+  font-size: 20px;
+}
+.work-space .show-info button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.work-space .head-buttons {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.work-space .head-buttons input[type=checkbox] {
+  border-radius: 50%;
+  background-color: #000;
+}
+.work-space .head-buttons label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+}
+.work-space .head-buttons label select {
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 3px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.work-space .head-buttons label select option {
+  font-size: 15px;
+}
+.work-space .head-buttons label select:hover {
+  background: #333;
+  cursor: pointer;
+}
+.work-space .bottom-buttons {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+}
+.work-space .bottom-buttons .buttons {
+  display: flex;
+  gap: 5px;
+}
+.work-space .bottom-buttons .buttons select {
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 3px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.work-space .bottom-buttons .buttons select option {
+  font-size: 15px;
+}
+.work-space .bottom-buttons .buttons select:hover {
+  background: #333;
+  cursor: pointer;
+}
+.work-space .bottom-buttons .buttons button {
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 3px;
+  background: #333;
+  transition: 0.2s;
+}
+.work-space .bottom-buttons .buttons button:hover {
+  background: #555;
+  cursor: pointer;
+}
+
+.landing-space {
+  padding-left: 2rem;
+  width: 40%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.landing-space .presentation {
+  height: 88%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.landing-space .presentation .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 45%;
+  justify-content: space-between;
+}
+.landing-space .presentation .title .icon {
+  width: 100%;
+  height: 100%;
+}
+.landing-space .presentation .title .icon img {
+  width: 100%;
+  height: 100%;
+}
+.landing-space .presentation .title .subtitle-bg {
+  background-color: #000;
+  height: 50px;
+  width: 190px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.landing-space .presentation .title .subtitle-bg .subtitle {
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  width: 10ch;
+  font-size: 30px;
+  font-weight: bolder;
+  animation: typing 5s steps(10) infinite;
+  overflow: hidden;
+}
+.landing-space .presentation .title .subtitle-bg .write {
+  font-family: monospace;
+  font-size: 30px;
+  display: block;
+  animation: blink 0.5s infinite step-end alternate;
+  font-weight: bolder;
+}
+.landing-space .presentation .title .btn-start {
+  display: none;
+  font-family: sans-serif;
+  color: white;
+  width: 260px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 3px;
+  background: #333;
+  margin-top: 20px;
+  transition: 0.2s;
+}
+.landing-space .presentation .title .btn-start:hover {
+  background: #555;
+  cursor: pointer;
+}
+.landing-space .presentation .info {
+  width: 100%;
+  border: 5px solid white;
+  border-radius: 20px;
+  padding: 15px;
+  height: 45%;
+  overflow-y: scroll;
+}
+.landing-space .presentation .info p {
+  font-family: sans-serif;
+  text-align: justify;
+  font-size: 20px;
+}
+.landing-space .social {
+  width: 80%;
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+.landing-space .social a {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.landing-space .social a ion-icon {
+  width: 70%;
+  height: 70%;
+  color: white;
+  transition: 0.5s;
+}
+.landing-space .social a:hover {
+  transform: scale(1.1);
+}
+.landing-space .social a:hover ion-icon {
+  color: #aaa;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    color: transparent;
+  }
+}
+@media (orientation: portrait) {
+  .work-space {
+    width: 100%;
+    overflow-y: hidden;
+  }
+  .landing-space {
+    width: 100%;
+    padding-left: 0;
+  }
+  .landing-space .presentation .title .btn-start {
+    display: block;
+  }
+  .landing-space .presentation .info {
+    border: none;
+    border-radius: 0;
+    overflow-y: hidden;
+  }
+}
+@media (orientation: landscape) {
+  #root {
+    max-height: 100vh;
+  }
+}
+@media (max-width: 576px) {
+  .work-space .show-info {
+    width: 250px;
+  }
+  .work-space .head-buttons {
+    width: 100%;
+  }
+  .work-space .head-buttons label:nth-child(2) {
+    flex-direction: column;
+  }
+  .work-space .head-buttons label:first-child span span:nth-child(2) {
+    display: none;
+  }
+  .work-space .bottom-buttons {
+    flex-direction: column;
+  }
+  .landing-space .presentation .title {
+    width: 60%;
+    height: 60%;
+  }
+  .landing-space .presentation .info p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .work-space .head-buttons {
+    width: 80%;
+  }
+  .landing-space .presentation .title {
+    width: 80%;
+    height: 80%;
+  }
+}
+@media (max-width: 992px) {
+  .work-space .head-buttons {
+    padding: 15px;
+    padding-top: 0;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+  }
+  .work-space .head-buttons input[type=checkbox] {
+    height: 20px;
+    width: 20px;
+  }
+  .landing-space .presentation .title {
+    width: 90%;
+    height: 90%;
+  }
+}
+@media (max-width: 1200px) {
+  .landing-space .presentation .title {
+    width: 85%;
+  }
+  .landing-space .presentation .info p {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=spaces.css.map */

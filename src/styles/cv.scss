@@ -1,0 +1,373 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+section {
+  position: relative;
+  width: 100%;
+
+  button {
+    position: absolute;
+    cursor: pointer;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #aaa;
+    transition: all 0.3s ease;
+    top: calc(100%);
+    right: 0px;
+
+    span,
+    ion-icon {
+      font-family: sans-serif;
+      text-align: center;
+      animation: fadeIn 0.3s ease-in-out;
+      transition: width 0.3s ease;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 1000;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.cv-panel {
+  position: relative;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 25px;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+  }
+}
+
+.cv-contact {
+  position: relative;
+  width: 100%;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  hr {
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+  }
+
+  &-name {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+    span {
+      a {
+        color: #222;
+
+        &:hover {
+          color: #555;
+        }
+      }
+    }
+  }
+
+  &-edit {
+    top: 0;
+  }
+}
+
+.cv-projects {
+  font-size: 18px;
+  min-height: 91px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .modal {
+    h2 {
+      font-size: 25px;
+    }
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-size: 18px;
+  }
+
+  hr {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  &-list {
+    width: 100%;
+
+    &-project {
+      width: 100%;
+      padding: 0 15px;
+
+      &-header {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+
+        &-buttons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+
+          button {
+            position: relative;
+            top: -5px;
+            margin-bottom: -5px;
+          }
+        }
+      }
+
+      &-data {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: justify;
+        margin-bottom: 10px;
+
+        span {
+          margin-bottom: 5px;
+
+          a {
+            color: #222;
+
+            &:hover {
+              color: #555;
+            }
+          }
+        }
+
+        &-technologies {
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}
+
+.cv-experience {
+  font-size: 12px;
+  min-height: 98px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .modal {
+    h2 {
+      font-size: 25px;
+    }
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-size: 18px;
+  }
+
+  hr {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  &-list {
+    width: 100%;
+
+    &-panel {
+      width: 100%;
+      padding: 0 15px;
+      min-height: 60.33px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &-head {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+        &-buttons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+
+          button {
+            position: relative;
+            top: -5px;
+            margin-bottom: -5px;
+          }
+        }
+      }
+
+      &-list {
+        width: 100%;
+
+        &-data {
+          width: 100%;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 10px;
+
+          &-head {
+            width: 100%;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+
+            &-position {
+              max-width: 70%;
+              text-align: justify;
+              font-weight: 900;
+              font-size: 18px;
+            }
+
+            &-time {
+              min-width: 180px;
+              text-align: right;
+              font-size: 18px;
+            }
+          }
+          &-description {
+            width: 100%;
+            text-align: left;
+            margin-top: 3px;
+            text-align: justify;
+            font-size: 18px;
+          }
+          &-buttons {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 5px;
+
+            button {
+              position: relative;
+              padding: 5px 8px;
+              top: 0px;
+              left: 0;
+              margin-bottom: -10px;
+              transform: scale(1);
+              &:hover {
+                transform: scale(1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.cv-education {
+  font-size: 18px;
+  min-height: 91px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .modal {
+    h2 {
+      font-size: 25px;
+    }
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-size: 18px;
+  }
+
+  hr {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  &-list {
+    width: 100%;
+
+    &-study {
+      width: 100%;
+      padding: 0 15px;
+
+      &-header {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+
+        &-buttons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+
+          button {
+            position: relative;
+            top: -5px;
+            margin-bottom: -5px;
+          }
+        }
+      }
+
+      &-data {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
